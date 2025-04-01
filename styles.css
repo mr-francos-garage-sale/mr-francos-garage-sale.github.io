@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+}
+
+.title {
+  text-align: center;
+  font-family: Sans-Serif;
+  padding-bottom: 35px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next row */
+  justify-content: center; /* Centers items when wrapping */
+  gap: 10px; /* Adds space between items */
+
+}
+
+.item {
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+}
+
+.item:hover {
+  background-color: #f0f0f0;
+}
+
+.item img {
+  width: 130px;
+  height: 130px;
+  border: 1px solid #d4d3d2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Ensure a max width for items to adapt properly */
+@media (max-width: 600px) {
+  .item img {
+    width: 100px;
+    height: 100px;
+  }
+}
